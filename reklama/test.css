@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body header {
+  background: url("img.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 400px;
+  color: white;
+}
+
+body header div {
+  margin: 10px 20px;
+}
+
+body header .logo {
+  width: 5%;
+  text-align: center;
+}
+
+body header .menu {
+  width: 65%;
+}
+
+body header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+body header .menu ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body header .menu ul .here {
+  border-bottom: 1px solid white;
+}
+
+body header .soc {
+  width: 30%;
+  text-align: right;
+}
+
+body header .soc a .fab {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 3px;
+  margin: 0 5px;
+  color: white;
+}
+
+body main .info {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .info .infoOblast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+
+body main .info .infoOblast .infoImg {
+  width: 45%;
+  height: 300px;
+  background: url("img.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body main .info .infoOblast .infoSeznam {
+  width: 45%;
+}
+
+body main .info .infoOblast .infoSeznam .infoRadek {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px auto;
+      grid-template-columns: 100px auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin: 20px 0;
+}
+
+body main .info .infoOblast .infoSeznam .infoRadek .ikonaSeznamu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  width: 80px;
+  height: 80px;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #abf533;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+body main .info .infoOblast .infoSeznam .infoRadek .nadpisIkony {
+  font-weight: 700;
+}
+/*# sourceMappingURL=test.css.map */
