@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a133fbfca8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="test.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reklama</title>
+</head>
+<body>
+<!--
+  Hlavička - hlav1 = horní lišta, hlav2 = nadpis
+-->
+  <header>
+    <div class="hlav1">
+      <div class="logo">
+        LOGO
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="here">úvod</li>
+          <li>zdroje</li>
+          <li>zdrojový kód</li>
+          <li>další projekty</li>
+        </ul>
+      </div>
+      <div class="soc">
+        <a href="https://github.com/webytom-anna" target="_blank"><i class="fab fa-github"></i></a><span>Tomáš Kubíček a Anna Jungmanová</span>
+      </div>
+    </div>
+    <div class="hlav2">
+      <div class="nazev">
+        <h1>Zdravá strava</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!--
+      Obsah - 1. sekce = .info
+      .infoOblast = pouze pro zarovnání
+        .infoImg = velký obrázek
+        .infoSeznam = seznam
+          .infoRadek = řádek seznamu, #iS \cislo = pořadí v animaci 
+            .ikonaSeznamu = ikona z Font Awesome
+            .nadpisikony = nadpis ikony
+            .popisekIkony = popisek ikony
+    -->
+    <h2>Jídlo a pití</h2>
+    <div class="info">
+      <div class="infoOblast">
+        <div class="infoImg"></div>
+        <div class="infoSeznam">
+          <div class="infoRadek" id="iS1">
+            <div class="ikonaSeznamu"><i class="fas fa-carrot"></i></div>
+            <span class="nadpisIkony">Pestrost</span>
+            <span class="popisekIkony">Dokonalý jídelníček by měl zahrnovat dostatek ovoce, zeleniny, mléčných výrobků, masa a pečiva (především celozrnné pečivo).</span>
+          </div>
+          <div class="infoRadek" id="iS2">
+            <div class="ikonaSeznamu"><i class="fas fa-history"></i></div>
+            <span class="nadpisIkony">Časování</span>
+            <span class="popisekIkony">Nejlepší je jíst 4x až 6x denně, ale takové menší porce. Také je ale nutné jídla střídat, a nejíst pořád to stejné.</span>
+          </div>
+          <div class="infoRadek" id="iS3">
+            <div class="ikonaSeznamu"><i class="fas fa-glass-whiskey"></i></div>
+            <span class="nadpisIkony"">Příjem tekutin</span>
+            <span class="popisekIkony">Mělo by se vypít 2,5 litru denně, dobré je střídat pití vody, ovocných a bylinných čajů, minerálních vod, neslazených džusů. Vyhýbat se tekutinám s obsahem cukru a alkoholu</span>
+          </div>
+          <div class="infoRadek" id="iS4">
+            <div class="ikonaSeznamu"><i class="fas fa-percent"></i></div>
+            <span class="nadpisIkony"">Správné složení stravy</span>
+            <span class="popisekIkony">Nejlépe by měla strava obsahovat 55% sacharidů, 30% tuků, 15% bílkovin, minerály a vitamíny. Množství a složení stravy je ale ovlivněno pohlavím, tělesným zatížením, věkem a zdravím. 
+            </span>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src="animace.js"></script>
+  </main>
+</body>
+</html>
