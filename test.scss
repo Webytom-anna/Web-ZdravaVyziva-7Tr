@@ -3,6 +3,7 @@ $imgRuzPoz: url('img.png');
 $colorRuzPoz: rgb(255, 174, 201);
 $colorSvZel: rgb(171, 245, 51);
 $colorTmSed: rgb(65, 65, 65);
+$colorFial: rgb(197, 20, 64);
 @mixin nastObr {
   background-position: center center;
   background-size: cover;
@@ -16,8 +17,18 @@ $colorTmSed: rgb(65, 65, 65);
   box-sizing: border-box;
 }
 body {
+  .nazvy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .popisek {;
+      text-align: center;
+      padding: 0 25%;
+    }
+  }
   font-family: 'Poppins', sans-serif;
   color: $colorTmSed;
+  //hlavička
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.4)0%, rgba(0,0,0,0)25%) ,$colorRuzPoz;
     @include nastObr;
@@ -78,11 +89,15 @@ body {
   }
     
   main {
-    h2 {
+    h2, h3 {
       margin: 30px 0 20px 0;
       text-align: center;
       font-size: 2em;
     }
+    h3 {
+      font-size: 1.5em;
+    }
+    //1. sekce
     .info {
       margin-top: 50px;
       width: 100%;
@@ -95,7 +110,7 @@ body {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
-        width: 70%;
+        width: 80vw;
         .infoImg {
           width: 45%;
           height: 300px;
@@ -108,7 +123,6 @@ body {
           width: 45%;
           #iS1 {
             opacity: 0;
-            transition: all 1s ease;
             animation: přílet 1s cubic-bezier(0.8, 0, 0.2, 1) 0s both;
             &:hover {
               transform: scale(1.1);
@@ -116,7 +130,6 @@ body {
           }
           #iS2 {
             opacity: 0;
-            transition: all 1s ease;
             animation: přílet 1s cubic-bezier(0.8, 0, 0.2, 1) 0.25s both;
             &:hover {
               transform: scale(1.1);
@@ -124,7 +137,6 @@ body {
           }
           #iS3 {
             opacity: 0;
-            transition: all 1s ease;
             animation: přílet 1s cubic-bezier(0.8, 0, 0.2, 1) 0.5s both;
             &:hover {
               transform: scale(1.1);
@@ -139,17 +151,18 @@ body {
           }
           .infoRadek {
             display: grid;
-            grid-template-columns: 100px auto;
+            grid-template-columns: auto auto;
             grid-template-rows: auto auto;
             margin: 10px 0;
             padding: 10px;
             .ikonaSeznamu {
               grid-row: 1 / 3;
-              width: 70px;
-              height: 70px;
+              width: calc(2vw + 30px);
+              height: calc(2vw + 30px);
               font-size: 1.7em;
               border-radius: 100%;
               background-color: $colorSvZel;
+              margin: 10px;
               color: white;
               display: flex;
               flex-wrap: nowrap;
@@ -166,6 +179,41 @@ body {
           }
         }
       }   
+    }
+    //2. sekce
+    .vyber {
+      margin: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      div[class^="box"] {
+        border: 1px solid rgb(180, 180, 180);
+        width: 25%;
+        padding: 30px;
+        text-align: center;
+        background: rgb(223, 223, 223);
+        transition: all .3s ease-in-out;
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+        }
+        h4 {
+          font-size: 1.2em;
+          margin: 5px 0 20px 0;
+        }
+        .procent {
+          .procenta {
+            font-size: 3em;
+            font-family: 'Oleo Script Swash Caps', cursive;
+            font-weight: 700;
+          }
+          .veStrave {
+            font-size: 1.5em;
+            font-weight: 600;
+          }
+        }
+      }
     }
   }
 }
