@@ -31,8 +31,8 @@ body .nazvy .popisek {
 }
 
 body header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(25%, rgba(0, 0, 0, 0))), url("pozadi-jahoda.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("pozadi-jahoda.png");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(0, 0, 0, 0.4)), color-stop(25%, rgba(0, 0, 0, 0))), url("pozadi-jahoda.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 12%, rgba(0, 0, 0, 0) 25%), url("pozadi-jahoda.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -162,6 +162,18 @@ body main .info .infoOblast {
   width: 80vw;
 }
 
+@media only screen and (max-width: 900px) {
+  body main .info .infoOblast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body main .info .infoOblast .infoImg {
   width: 45%;
   height: 300px;
@@ -174,8 +186,20 @@ body main .info .infoOblast .infoImg {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 900px) {
+  body main .info .infoOblast .infoImg {
+    width: 100%;
+  }
+}
+
 body main .info .infoOblast .infoSeznam {
   width: 45%;
+}
+
+@media only screen and (max-width: 900px) {
+  body main .info .infoOblast .infoSeznam {
+    width: 100%;
+  }
 }
 
 body main .info .infoOblast .infoSeznam #iS1 {
@@ -280,6 +304,18 @@ body main .vyber {
       justify-content: space-around;
 }
 
+@media only screen and (max-width: 900px) {
+  body main .vyber {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body main .vyber div[class^="box"] {
   border: 1px solid #b4b4b4;
   width: 25%;
@@ -296,6 +332,13 @@ body main .vyber div[class^="box"]:hover {
           transform: translateY(-10px);
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 900px) {
+  body main .vyber div[class^="box"] {
+    width: 100%;
+    margin: 20px;
+  }
 }
 
 body main .vyber div[class^="box"] h4 {
@@ -392,6 +435,212 @@ body main .energieCele .energie .vydprijTab .tabRada .bunka {
   width: auto;
 }
 
+body main .galerie .container {
+  margin: 40px;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+}
+
+body main .galerie .image-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 1.5rem;
+      grid-template-areas: 'img-1 img-2 img-3 img-3'
+ 'img-1 img-4 img-5 img-6'
+ 'img-7 img-7 img-8 img-6';
+}
+
+body main .galerie .image-gallery a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+body main .galerie .image-gallery a span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+body main .galerie .image-gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+body main .galerie .image-gallery a::after {
+  opacity: 0;
+}
+
+body main .galerie .image-gallery a:hover,
+body main .galerie .image-gallery a:hover::before {
+  opacity: 1;
+  color: white;
+}
+
+body main .galerie .img-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url("images/img-1.jpg");
+}
+
+body main .galerie .img-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img-2;
+  background-image: url("images/img-2.jpg");
+}
+
+body main .galerie .img-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img-3;
+  background-image: url("images/img-3.jpg");
+}
+
+body main .galerie .img-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img-4;
+  background-image: url("images/img-4.jpg");
+}
+
+body main .galerie .img-5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: img-5;
+  background-image: url("images/img-5.jpg");
+}
+
+body main .galerie .img-6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url("images/img-6.jpg");
+}
+
+body main .galerie .img-7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img-7;
+  background-image: url("images/img-7.jpg");
+}
+
+body main .galerie .img-8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img-8;
+  background-image: url("images/img-8.jpg");
+}
+
+@media screen and (max-width: 900px) {
+  body main .galerie .image-gallery {
+        grid-template-areas: 'img-1 img-1 img-2 img-2'
+ 'img-1 img-1 img-3 img-3'
+ 'img-4 img-4 img-5 img-5'
+ 'img-6 img-7 img-7 img-7'
+ 'img-8 img-8 img-8 img-8';
+  }
+  body main .galerie .image-gallery a {
+    height: 20rem;
+  }
+  body main .galerie .img-1 {
+    min-height: 41.5rem;
+  }
+  body main .galerie .img-6 {
+    min-height: 20rem;
+  }
+}
+
+body footer {
+  background: #5f8fe9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+}
+
+body footer .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+body footer .menu ul li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body footer .menu ul .here {
+  text-decoration: underline;
+}
+
+body footer .soc {
+  width: 30%;
+  text-align: right;
+}
+
+body footer .soc a .fab {
+  color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 3px;
+  margin: 0 5px;
+}
+
 @-webkit-keyframes přílet {
   0% {
     opacity: 0;
@@ -429,6 +678,24 @@ body main .energieCele .energie .vydprijTab .tabRada .bunka {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes text {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes text {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
   }
 }
 /*# sourceMappingURL=reklama.css.map */
