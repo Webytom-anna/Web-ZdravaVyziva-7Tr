@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a133fbfca8.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="reklama.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reklama</title>
 </head>
@@ -82,6 +82,15 @@
       <h3>Správné složení stravy</h3>
     <p class="popisek">Nejlépe by měla strava obsahovat 55% sacharidů, 30% tuků, 15% bílkovin, důležité ale jsou i minerály a vitamíny. Množství a složení stravy je ale ovlivněno pohlavím, tělesným zatížením, věkem a zdravím. Také je nutné jídla střídat, a nejíst pořád to stejné.</p>
     </div>
+    <!--
+      Obsah - 2. sekce = .vyber
+      .box1-3 = boxy
+        h4 = název boxu
+        .popis = popis boxu
+        .procent = procent
+          .procenta = procenta
+          .veStrave = text "ve stravě"
+    -->
     <div class="vyber">
       <div class="box1">
         <h4>Sacharidy</h4>
@@ -103,6 +112,17 @@
       <h3>Výživová energie</h3>
       <p class="popisek">Přísun energie získáváme z každého jídla a pití. Energetická hodnota potraviny, která se vyjadřuje v kilokaloriích nebo kilojoulech (10&nbsp;kJ&nbsp;=&nbsp;2,4&nbsp;kcal&nbsp;a&nbsp;1&nbsp;kcal&nbsp;=&nbsp;4,2&nbsp;kJ), je množství tepla/energie, které se vyvine spálením/rozkladem látek obsažených v potravině.</p>
     </div>
+    <!--
+      Obsah - 3. sekce = .energieCele
+      .nadpisTab = nadpis a popis tabulky
+      .energie = box s tabulkami
+        .prijmy & .vydaje = box pro tabulky s názvem
+          h4 = název
+          .vydprijTab = tabulka
+            .tabRada = řad tabulky
+              .bunka činnost = bunka - činnost a jídlo
+              .bunka hodnota = bunka - hodnota v Kcal
+    -->
     <div class="energieCele">
       <div class="nadpisTab">
         <h3>Tabulka porovnání příjmů a výdajů</h3>
@@ -113,28 +133,28 @@
           <h4>Příjmy</h4>
           <div class="vydprijTab">
             <div class="tabRada">
-              <div class="bunka činnost">5&nbsp;porcí&nbsp;jablek</div>
-              <div class="bunka hodnota">254&nbsp;Kcal</div>
+              <div class="bunka činnost">5 porcí jablek</div>
+              <div class="bunka hodnota">254 Kcal</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">20&nbsp;porcí&nbsp;nakládaných&nbsp;hub</div>
-              <div class="bunka hodnota">503&nbsp;Kcal</div>
+              <div class="bunka činnost">20 porcí nakládaných hub</div>
+              <div class="bunka hodnota">503 Kcal</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">2&nbsp;porce&nbsp;řeckého&nbsp;jogurtu</div>
-              <div class="bunka hodnota">378&nbsp;Kcal</div>
+              <div class="bunka činnost">2 porce řeckého jogurtu</div>
+              <div class="bunka hodnota">378 Kcal</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">3&nbsp;porce&nbsp;toustového&nbsp;chleba</div>
-              <div class="bunka hodnota">939&nbsp;Kcal</div>
+              <div class="bunka činnost">3 porce toustového chleba</div>
+              <div class="bunka hodnota">939 Kcal</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">1&nbsp;porce&nbsp;solených&nbsp;brambůrků</div>
-              <div class="bunka hodnota">515&nbsp;Kcal</div>
+              <div class="bunka činnost">1 porce solených brambůrků</div>
+              <div class="bunka hodnota">515 Kcal</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">3&nbsp;porce&nbsp;vepřové&nbsp;pečeně</div>
-              <div class="bunka hodnota">832&nbsp;Kcal</div>
+              <div class="bunka činnost">3 porce vepřové pečeně</div>
+              <div class="bunka hodnota">832 Kcal</div>
             </div>
           </div>
         </div>
@@ -143,33 +163,146 @@
           <div class="vydprijTab">
             <div class="tabRada">
               <div class="bunka činnost">Úklid</div>
-              <div class="bunka hodnota">251&nbsp;kcal/90&nbsp;kg</div>
+              <div class="bunka hodnota">251 kcal/90 kg</div>
             </div>
             <div class="tabRada">
-              <div class="bunka činnost">Sjezdové&nbsp;lyžování</div>
-              <div class="bunka hodnota">502&nbsp;Kcal/100&nbsp;kg</div>
+              <div class="bunka činnost">Sjezdové lyžování</div>
+              <div class="bunka hodnota">502 Kcal/100 kg</div>
             </div>
             <div class="tabRada">
               <div class="bunka činnost">Plavání</div>
-              <div class="bunka hodnota">380&nbsp;Kcal/70&nbsp;kg</div>
+              <div class="bunka hodnota">380 Kcal/70 kg</div>
             </div>
             <div class="tabRada">
               <div class="bunka činnost">Fotbal</div>
-              <div class="bunka hodnota">928&nbsp;Kcal/95&nbsp;kg</div>
+              <div class="bunka hodnota">928 Kcal/95 kg</div>
             </div>
             <div class="tabRada">
               <div class="bunka činnost">Tenis</div>
-              <div class="bunka hodnota">524&nbsp;Kcal/75&nbsp;kg</div>
+              <div class="bunka hodnota">524 Kcal/75 kg</div>
             </div>
             <div class="tabRada">
               <div class="bunka činnost">Squash</div>
-              <div class="bunka hodnota">842&nbsp;Kcal/65&nbsp;kg</div>
+              <div class="bunka hodnota">842 Kcal/65 kg</div>
             </div>
           </div>
         </div>
       </div> 
     </div>
+    <!-- ! ANNA - upravuj pouze pod tímto komentářem-->
+    <div class="nazvy">
+      <h3>Galerie</h3>
+    </div>
+    <div class="galerie">
+      <div class="container">
+        <div class="image-gallery">
+            <a href="images/img-1.jpg" class="img-1">
+              <span class="nazevJidla">Jahody (na porci)</span><br>
+              Energetická hodnota: 
+              35 kcal<br>
+              Bílkoviny: 
+              0,79 g<br>
+              Sacharidy: 
+              6 g<br>
+              Tuky: 
+              0,37 g
+            </a>
+            <a href="images/img-2.jpg" class="img-2">
+              <span class="nazevJidla">Meloun (na porci)</span><br>
+              Energetická hodnota: 
+              28 kcal <br>
+              Bílkoviny: 
+              0,65 g <br>
+              Sacharidy: 
+              6 g <br>
+              Tuky: 
+              0,17 g
+            </a>
+            <a href="images/img-3.jpg" class="img-3">
+              <span class="nazevJidla">Okurka (na porci)</span><br>
+              Energetická hodnota: 
+              14 kcal <br>
+              Bílkoviny: 
+              0,82 g <br>
+              Sacharidy: 
+              2 g <br>
+              Tuky: 
+              0,18 g
+            </a>
+            <a href="images/img-4.jpg" class="img-4">
+              <span class="nazevJidla">Maliny (na porci)</span><br>
+              Energetická hodnota: 
+              61 kcal <br>
+              Bílkoviny: 
+              1 g <br>
+              Sacharidy: 
+              13 g <br>
+              Tuky: 
+              0,58 g</a>
+            <a href="images/img-5.jpg" class="img-5">
+              <span class="nazevJidla">Mrkev (na porci)</span><br>
+              Energetická hodnota: 
+              35 kcal <br>
+              Bílkoviny: 
+              1 g <br>
+              Sacharidy: 
+              7 g <br>
+              Tuky: 
+              0,22 g
+            </a>
+            <a href="images/img-6.jpg" class="img-6">
+              <span class="nazevJidla">Kiwi (na porci)</span><br>
+              Energetická hodnota: 
+              65 kcal <br>
+              Bílkoviny: 
+              1 g <br>
+              Sacharidy: 
+              14 g <br>
+              Tuky: 
+              0,63 g
+            </a>
+            <a href="images/img-7.jpg" class="img-7">
+              <span class="nazevJidla">Vlašské ořechy (na porci)</span><br>
+              Energetická hodnota: 
+              656 kcal <br>
+              Bílkoviny: 
+              16 g <br>
+              Sacharidy: 
+              12 g <br>
+              Tuky: 
+              60 g <br>
+            </a>
+            <a href="images/img-8.jpg" class="img-8">
+              <span class="nazevJidla">Třešně (na porci)</span><br>
+              Energetická hodnota: 
+              65 kcal<br>
+              Bílkoviny: 
+              0,91 g <br>
+              Sacharidy: 
+              14 g <br>
+              Tuky: 
+              0,41 g <br>
+            </a>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- ! ANNA - upravuj pouze nad tímto komentářem-->
     <script src="animace.js"></script>
   </main>
+  <footer>
+    <div class="menu">
+      <ul>
+        <li class="here">úvod</li>
+        <li>zdroje</li>
+        <li>zdrojový kód</li>
+        <li>další projekty</li>
+      </ul>
+    </div>
+    <div class="soc">
+      <a href="https://github.com/webytom-anna" target="_blank"><i class="fab fa-github"></i></a><span>Tomáš Kubíček a Anna Jungmanová</span>
+    </div>
+  </footer>
 </body>
 </html>
