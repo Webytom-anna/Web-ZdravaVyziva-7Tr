@@ -22,6 +22,8 @@ Studentský projekt. Zkouška práce s Gitem, GitHubem a programováním responz
 
 
 
-<img title="" src="/Users/aja/Downloads/by-nc-sa.png" alt="by-nc-sa.png" width="127">
+<img src="LICENCE.png" title="" alt="LICENCE.png" width="165">
+
+
 
 
