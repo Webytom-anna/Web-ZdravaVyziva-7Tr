@@ -30,6 +30,8 @@ body .nazvy .popisek {
   padding: 0 25%;
 }
 
+
+
 body header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(0, 0, 0, 0.4)), color-stop(25%, rgba(0, 0, 0, 0))), url("../images/pozadi-jahoda.png");
   background: linear-gradient(rgba(0, 0, 0, 0.4) 12%, rgba(0, 0, 0, 0) 25%), url("../images/pozadi-jahoda.png");
@@ -85,7 +87,7 @@ body header .hlav1 .menu ul li {
 }
 
 body header .hlav1 .menu ul .here {
-  text-decoration: underline;
+  text-decoration: non-underline;
 }
 
 body header .hlav1 .soc {
@@ -116,18 +118,22 @@ body header .hlav2 {
 
 body header .hlav2 .nazev {
   font-family: 'Dancing Script', cursive;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 3em;
 }
 
 body main h2, body main h3 {
   margin: 30px 0 20px 0;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 600;
+color: #F24685;
+text-transform: uppercase;
+  
 }
 
 body main h3 {
-  font-size: 1.5em;
+  font-size: 2.4em;
 }
 
 body main .info {
@@ -284,7 +290,10 @@ body main .info .infoOblast .infoSeznam .infoRadek .ikonaSeznamu {
 }
 
 body main .info .infoOblast .infoSeznam .infoRadek .nadpisIkony {
-  font-weight: 700;
+  font-weight: 600;
+color: #F24685;
+text-transform: uppercase;
+font-size: 1.2em;
 }
 
 body main .info .infoOblast .infoSeznam .infoRadek .popisekIkony {
@@ -317,11 +326,11 @@ body main .vyber {
 }
 
 body main .vyber div[class^="box"] {
-  border: 1px solid #b4b4b4;
+  border: 1px solid #abf533;;
   width: 25%;
   padding: 30px;
   text-align: center;
-  background: #dfdfdf;
+  background: #abf533;;
   -moz-background: whitesmoke;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -342,8 +351,9 @@ body main .vyber div[class^="box"]:hover {
 }
 
 body main .vyber div[class^="box"] h4 {
-  font-size: 1.2em;
-  margin: 5px 0 20px 0;
+  font-size: 1.4em;
+margin: 5px 0 20px 0;
+text-transform: uppercase;
 }
 
 body main .vyber div[class^="box"] .procent {
@@ -362,11 +372,11 @@ body main .vyber div[class^="box"] .procent .veStrave {
 }
 
 body main .energieCele {
-  color: white;
-  margin: 40px 0;
-  height: 500px;
-  padding: 10px 0 25px 0;
-  background: #39960f;
+  color: #414141;
+margin: 40px 0;
+height: 500px;
+padding: 10px 0 25px 0;
+background: #abf533;
 }
 
 body main .energieCele .nadpisTab {
@@ -376,7 +386,7 @@ body main .energieCele .nadpisTab {
 
 body main .energieCele .nadpisTab h3 {
   margin-bottom: 5px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 body main .energieCele .energie {
@@ -396,6 +406,7 @@ body main .energieCele .energie {
 body main .energieCele .energie h4 {
   text-align: center;
   font-size: 1.3em;
+  
 }
 
 body main .energieCele .energie .vydprijTab {
@@ -588,7 +599,7 @@ body main .galerie .img-8 {
 }
 
 body footer {
-  background: #5f8fe9;
+  background:#F24685;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,6 +627,7 @@ body footer .menu ul {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
+
 }
 
 body footer .menu ul li {
@@ -625,7 +637,7 @@ body footer .menu ul li {
 }
 
 body footer .menu ul .here {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 body footer .soc {
