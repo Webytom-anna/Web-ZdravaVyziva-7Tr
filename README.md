@@ -2,7 +2,9 @@
 
 Reklamní stránka na zdravou výživu. 
 
-Studentský projekt. Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
+Studentský projekt žáků sedmé třídy ZŠ. 
+
+Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
 
 #### Zadání
 
