@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="cz">
+
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a133fbfca8.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="reklama.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Oleo+Script+Swash+Caps:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/reklama.css">
+  <link rel="stylesheet" href="styles/lightbox.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reklama</title>
 </head>
+
 <body>
-<!--
+  <!--
   Hlavička - hlav1 = horní lišta, hlav2 = nadpis
 -->
   <header>
@@ -20,15 +23,15 @@
       </div>
       <div class="menu">
         <ul>
-          <li class="here">úvod</li>
-          <li><a href="zdroje.html">zdroje</a></li>
-          <li><a href="https://github.com/Webytom-anna/reklama/commits/master">Zdrojový kód</a></li>
-          <li><a href="http://webytom.eu/index.html">další projekty</a></li>
+          <li class="here"><a href="#jidlo">Jídlo a pití</a></li>
+          <li><a href="#strava">Složení stravy</a></li>
+          <li><a href="#energie">Výživová energie</a></li>
+          <li><a href="#tabulka">Tabulka</a></li>
+          <li><a href="#pyramida">Pyramida</a></li>
+          <li><a href="#galerie">Galerie</a></li>
         </ul>
       </div>
-      <div class="soc">
-        <a href="https://github.com/webytom-anna" target="_blank"><i class="fab fa-github"></i></a><span>Tomáš Kubíček a Anna Jungmannová</span>
-      </div>
+
     </div>
     <div class="hlav2">
       <div class="nazev">
@@ -48,39 +51,49 @@
             .popisekIkony = popisek ikony
     -->
     <div class="nazvy">
-      <h2>1) Jídlo a pití</h2>
+      <h2 id="jidlo">Jídlo a pití</h2>
       <h3>Základy stravování</h3>
     </div>
     <div class="info">
       <div class="infoOblast">
-        <div class="infoImg"></div>
+        <div class="infoImg">
+          <img src="images/jahoda.png">
+        </div>
         <div class="infoSeznam">
           <div class="infoRadek" id="iS1">
             <div class="ikonaSeznamu"><i class="fas fa-carrot"></i></div>
             <span class="nadpisIkony">Pestrost</span>
-            <span class="popisekIkony">Dokonalý jídelníček by měl zahrnovat dostatek ovoce, zeleniny, mléčných výrobků, masa a pečiva (především celozrnné pečivo).</span>
+            <span class="popisekIkony">Dokonalý jídelníček by měl zahrnovat dostatek ovoce, zeleniny, mléčných výrobků,
+              masa a pečiva (především celozrnné pečivo).</span>
           </div>
           <div class="infoRadek" id="iS2">
             <div class="ikonaSeznamu"><i class="fas fa-history"></i></div>
             <span class="nadpisIkony">Časování</span>
-            <span class="popisekIkony">Nejlepší je jíst 4x až 6x denně, ale takové menší porce. Také je ale nutné jídla střídat, a nejíst pořád to stejné.</span>
+            <span class="popisekIkony">Nejlepší je jíst 4x až 6x denně, ale takové menší porce. Také je ale nutné jídla
+              střídat, a nejíst pořád to stejné.</span>
           </div>
           <div class="infoRadek" id="iS3">
             <div class="ikonaSeznamu"><i class="fas fa-glass-whiskey"></i></div>
             <span class="nadpisIkony"">Příjem tekutin</span>
-            <span class="popisekIkony">Mělo by se vypít 2,5 litru denně, dobré je střídat pití vody, ovocných a bylinných čajů, minerálních vod, neslazených džusů. Vyhýbat se tekutinám s obsahem cukru a alkoholu</span>
+            <span class=" popisekIkony">Mělo by se vypít 2,5 litru denně, dobré je střídat pití vody, ovocných a
+              bylinných čajů, minerálních vod, neslazených džusů. Vyhýbat se tekutinám s obsahem cukru a
+              alkoholu.</span>
           </div>
           <div class="infoRadek" id="iS4">
             <div class="ikonaSeznamu"><i class="fas fa-percent"></i></div>
             <span class="nadpisIkony"">Energetická hodnota stravy</span>
-            <span class="popisekIkony">Příjem stravy má odpovídat energetickému výdeji. Ten se v průběhu života mění, v dětství, kdy organismus roste a sílí, musí být přívod energie vyšší, než je energetický výdej. V pozdějším věku se má přívod energie snižovat. </span>
+            <span class=" popisekIkony">Příjem stravy má odpovídat energetickému výdeji. Ten se v průběhu života mění,
+              v dětství, kdy organismus roste a sílí, musí být přívod energie vyšší, než je energetický výdej. V
+              pozdějším věku se má přívod energie snižovat. </span>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
     <div class="nazvy">
-      <h3>Správné složení stravy</h3>
-    <p class="popisek">Nejlépe by měla strava obsahovat 55% sacharidů, 30% tuků, 15% bílkovin, důležité ale jsou i minerály a vitamíny. Množství a složení stravy je ale ovlivněno pohlavím, tělesným zatížením, věkem a zdravím. Také je nutné jídla střídat, a nejíst pořád to stejné.</p>
+      <h3 id="strava">Správné složení stravy</h3>
+      <p class="popisek">Nejlépe by měla strava obsahovat 55% sacharidů, 30% tuků, 15% bílkovin, důležité ale jsou i
+        minerály a vitamíny. Množství a složení stravy je ale ovlivněno pohlavím, tělesným zatížením, věkem a zdravím.
+        Také je nutné jídla střídat, a nejíst pořád to stejné.</p>
     </div>
     <!--
       Obsah - 2. sekce = .vyber
@@ -94,23 +107,32 @@
     <div class="vyber">
       <div class="box1">
         <h4>Sacharidy</h4>
-        <p class="popis">Sacharidy tvoří většinou sladkou část naší potravy. Jejich nadbytek vede ke vzniku nadváhy, obezity a přispívají k tvorbě zubních kazů</p>
-        <p class="procent" style="color: rgb(197, 150, 20);"><span class="procenta">55%</span><br><span class="veStrave">ve stravě</span></p>
+        <p class="popis">Sacharidy tvoří většinou sladkou část naší potravy. Jejich nadbytek vede ke vzniku nadváhy,
+          obezity a přispívají k tvorbě zubních kazů.</p>
+        <p class="procent" style="color: #F24685;;"><span class="procenta">55%</span><br><span class="veStrave">ve
+            stravě</span></p>
       </div>
       <div class="box2">
         <h4>Tuky</h4>
-        <p class="popis">Tuky jsou často považovány za viníky obezity. Přesto jsou ale ve výživě velice důležité. Naše tělo je bere jako "zásobní&nbsp;energie"</p>
-        <p class="procent" style="color: rgb(20, 97, 197);"><span class="procenta">30%</span><br><span class="veStrave">ve stravě</span></p>
+        <p class="popis">Tuky jsou často považovány za viníky obezity. Přesto jsou ale ve výživě velice důležité. Naše
+          tělo je bere jako "zásobní&nbsp;energie".</p>
+        <p class="procent" style="color:#F24685;;"><span class="procenta">30%</span><br><span class="veStrave">ve
+            stravě</span></p>
       </div>
       <div class="box3">
         <h4>Bílkoviny</h4>
-        <p class="popis">Bílkoviny jsou základním stavebním kamenem všech tkání v těle. Sloužím nám k růstu a obnově buněk a tkání, k tvorbě svalů, k produkci hormonů a protilátek.</p>
-        <p class="procent" style="color: rgb(197, 20, 64);"><span class="procenta">15%</span><br><span class="veStrave">ve stravě</span></p>
+        <p class="popis">Bílkoviny jsou základním stavebním kamenem všech tkání v těle. Sloužím nám k růstu a obnově
+          buněk a tkání, k tvorbě svalů, k produkci hormonů a protilátek.</p>
+        <p class="procent" style="color: #F24685;;"><span class="procenta">15%</span><br><span class="veStrave">ve
+            stravě</span></p>
       </div>
     </div>
     <div class="nazvy">
-      <h3>Výživová energie</h3>
-      <p class="popisek">Přísun energie získáváme z každého jídla a pití. Energetická hodnota potraviny, která se vyjadřuje v kilokaloriích nebo kilojoulech (10&nbsp;kJ&nbsp;=&nbsp;2,4&nbsp;kcal&nbsp;a&nbsp;1&nbsp;kcal&nbsp;=&nbsp;4,2&nbsp;kJ), je množství tepla/energie, které se vyvine spálením/rozkladem látek obsažených v potravině.</p>
+      <h3 id="energie">Výživová energie</h3>
+      <p class="popisek">Přísun energie získáváme z každého jídla a pití. Energetická hodnota potraviny, která se
+        vyjadřuje v kilokaloriích nebo kilojoulech
+        (10&nbsp;kJ&nbsp;=&nbsp;2,4&nbsp;kcal&nbsp;a&nbsp;1&nbsp;kcal&nbsp;=&nbsp;4,2&nbsp;kJ), je množství
+        tepla/energie, které se vyvine spálením/rozkladem látek obsažených v potravině.</p>
     </div>
     <!--
       Obsah - 3. sekce = .energieCele
@@ -125,7 +147,7 @@
     -->
     <div class="energieCele">
       <div class="nadpisTab">
-        <h3>Tabulka porovnání příjmů a výdajů</h3>
+        <h3 id="tabulka">Tabulka příjmů a výdajů</h3>
         <p>1 porce je přibližně velká jako sevřená pěst</p>
       </div>
       <div class="energie">
@@ -187,181 +209,177 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
-    <!-- ! ANNA - upravuj pouze pod tímto komentářem-->
+    <!-- Pyramida-->
     <div class="nazvy">
-      <h3>Nutriční hodnoty</h3>
-      <p class="popisek">Nutriční hodnoty jsou údaje o obsahu energie, tuků, saharidů  bílkovin v potravině. Můžete je najít u většiny potravin na tabulce ze zadu produktu. Tipněte si, kolik energie, sacharidů, tuků a bílkovin je v ovoci a zelenině na obrázkách</p>
-    </div>
-    <div class="galerie">
-        <div class="container">
-            <div class="image-gallery">
-                <a href="images/img-1.jpg" class="img-1">
-                <span class="nazevJidla">Jahody (na porci)</span><br>
-                Energetická hodnota: 
-                35 kcal<br>
-                Bílkoviny: 
-                0,79 g<br>
-                Sacharidy: 
-                6 g<br>
-                Tuky: 
-                0,37 g
-                </a>
-                <a href="images/img-2.jpg" class="img-2">
-                <span class="nazevJidla">Meloun (na porci)</span><br>
-                Energetická hodnota: 
-                28 kcal <br>
-                Bílkoviny: 
-                0,65 g <br>
-                Sacharidy: 
-                6 g <br>
-                Tuky: 
-                0,17 g
-                </a>
-                <a href="images/img-3.jpg" class="img-3">
-                <span class="nazevJidla">Okurka (na porci)</span><br>
-                Energetická hodnota: 
-                14 kcal <br>
-                Bílkoviny: 
-                0,82 g <br>
-                Sacharidy: 
-                2 g <br>
-                Tuky: 
-                0,18 g
-                </a>
-                <a href="images/img-4.jpg" class="img-4">
-                <span class="nazevJidla">Maliny (na porci)</span><br>
-                Energetická hodnota: 
-                61 kcal <br>
-                Bílkoviny: 
-                1 g <br>
-                Sacharidy: 
-                13 g <br>
-                Tuky: 
-                0,58 g</a>
-                <a href="images/img-5.jpg" class="img-5">
-                <span class="nazevJidla">Mrkev (na porci)</span><br>
-                Energetická hodnota: 
-                35 kcal <br>
-                Bílkoviny: 
-                1 g <br>
-                Sacharidy: 
-                7 g <br>
-                Tuky: 
-                0,22 g
-                </a>
-                <a href="images/img-6.jpg" class="img-6">
-                <span class="nazevJidla">Kiwi (na porci)</span><br>
-                Energetická hodnota: 
-                65 kcal <br>
-                Bílkoviny: 
-                1 g <br>
-                Sacharidy: 
-                14 g <br>
-                Tuky: 
-                0,63 g
-                </a>
-                <a href="images/img-7.jpg" class="img-7">
-                <span class="nazevJidla">Vlašské ořechy (na porci)</span><br>
-                Energetická hodnota: 
-                656 kcal <br>
-                Bílkoviny: 
-                16 g <br>
-                Sacharidy: 
-                12 g <br>
-                Tuky: 
-                60 g <br>
-                </a>
-                <a href="images/img-8.jpg" class="img-8">
-                <span class="nazevJidla">Třešně (na porci)</span><br>
-                Energetická hodnota: 
-                65 kcal<br>
-                Bílkoviny: 
-                0,91 g <br>
-                Sacharidy: 
-                14 g <br>
-                Tuky: 
-                0,41 g <br>
-                </a>
+      <h3 id="pyramida">Potravinová Pyramida</h3>
+      <section class="flexbox-pyramida">
+        <div class="pyramidka">
 
+          <div>
+            <h4>PRVNÍ PATRO</h4>
+            <p>
+              Základnu pyramidy tvoří nápoje, které jsou nedílnou součástí stravy. Je potřeba omezit slazené
+              i sycené nápoje a podporovat pití obyčejné vody či případně vody velice mírně ochucené.</p>
+            <br />
+          </div>
+
+          <div>
+            <h4>DRUHÉ PATRO</h4>
+            <p>Ve druhém patře pyramidy jsou znázorněny obiloviny, pekařské výrobky, těstoviny apod., neboť
+              obsahují hlavní podíl sacharidů.</p>
+          </div>
+        </div>
+        <div class="pyramidka">
+          <img src="images/pyramida.png" alt="pyramida" class="pyramida">
+        </div>
+        <div class="pyramidka">
+          <div>
+            <h4>TŘETÍ PATRO</h4>
+            <p>Třetí patro Pyramidy výživy pro děti tvoří ovoce a zelenina.</p> <br />
+            <div>
+              <h4>ČTVRTÉ A PÁTÉ PATRO</h4>
+              <p>Ve čtvrtém patře se nacházejí významné zdroje bílkovin: mléčné výrobky, vejce, libové
+                maso, tučnější ryby, luštěniny, ořechy a olejnatá semena.
+                <br/>Vrchol pyramidy obsahuje potraviny, které dávají prostor pro dochucení pokrmu.</p>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="nazvy">
-      <h3>Poruchy příjmu potravy</h3>
-      <p class="popisek">Poruchy příjmu potravy</p>
-    </div>
-    <div class="ppp">
-      <div class="accPole1" id="prvniAcc">
-        <div class="aktivacni">
-          <h4>Anorexie</h4>
-        </div>
-        <div class="obsahAcc">
-          <p>HHHHHHHHHHhlhjgfjhjioghdiivjd gjijdfgijf f djogididi ggidfig dfj i df</p>
+      </section>
+      <!-- Pyramida konec-->
+
+      <!-- Galerie-->
+      <div class="nazvy">
+        <h3 id="galerie">Galerie</h3>
+      </div>
+      <div class="galerie">
+        <div class="container">
+          <div class="image-gallery">
+            <a href="images/galerie/img-1.jpg" data-lightbox="image-1" class="img-1">
+              <span class="nazevJidla">Jahody (na porci)</span><br>
+              Energetická hodnota:
+              35 kcal<br>
+              Bílkoviny:
+              0,79 g<br>
+              Sacharidy:
+              6 g<br>
+              Tuky:
+              0,37 g
+            </a>
+            <a href="images/galerie/img-2.jpg" data-lightbox="image-2" class="img-2">
+              <span class="nazevJidla">Meloun (na porci)</span><br>
+              Energetická hodnota:
+              28 kcal <br>
+              Bílkoviny:
+              0,65 g <br>
+              Sacharidy:
+              6 g <br>
+              Tuky:
+              0,17 g
+            </a>
+            <a href="images/galerie/img-3.jpg" data-lightbox="image-3" class="img-3">
+              <span class="nazevJidla">Okurka (na porci)</span><br>
+              Energetická hodnota:
+              14 kcal <br>
+              Bílkoviny:
+              0,82 g <br>
+              Sacharidy:
+              2 g <br>
+              Tuky:
+              0,18 g
+            </a>
+            <a href="images/galerie/img-4.jpg" data-lightbox="image-4" class="img-4">
+              <span class="nazevJidla">Maliny (na porci)</span><br>
+              Energetická hodnota:
+              61 kcal <br>
+              Bílkoviny:
+              1 g <br>
+              Sacharidy:
+              13 g <br>
+              Tuky:
+              0,58 g</a>
+            <a href="images/galerie/img-5.jpg" data-lightbox="image-5" class="img-5">
+              <span class="nazevJidla">Mrkev (na porci)</span><br>
+              Energetická hodnota:
+              35 kcal <br>
+              Bílkoviny:
+              1 g <br>
+              Sacharidy:
+              7 g <br>
+              Tuky:
+              0,22 g
+            </a>
+            <a href="images/galerie/img-6.jpg" data-lightbox="image-6" class="img-6">
+              <span class="nazevJidla">Kiwi (na porci)</span><br>
+              Energetická hodnota:
+              65 kcal <br>
+              Bílkoviny:
+              1 g <br>
+              Sacharidy:
+              14 g <br>
+              Tuky:
+              0,63 g
+            </a>
+            <a href="images/galerie/img-7.jpg" data-lightbox="image-7" class="img-7">
+              <span class="nazevJidla">Vlašské ořechy (na porci)</span><br>
+              Energetická hodnota:
+              656 kcal <br>
+              Bílkoviny:
+              16 g <br>
+              Sacharidy:
+              12 g <br>
+              Tuky:
+              60 g <br>
+            </a>
+            <a href="images/galerie/img-8.jpg" data-lightbox="image-8" class="img-8">
+              <span class="nazevJidla">Třešně (na porci)</span><br>
+              Energetická hodnota:
+              65 kcal<br>
+              Bílkoviny:
+              0,91 g <br>
+              Sacharidy:
+              14 g <br>
+              Tuky:
+              0,41 g <br>
+            </a>
+
+          </div>
+
         </div>
       </div>
-      <div class="accPole2">
-        <div class="aktivacni">
-          <h4>Bulimie</h4>
-        </div>
-        <div class="obsahAcc">
-          <p>HHHHHHHHHHhlhjgfjhjioghdiivjd gjijdfgijf f djogididi ggidfig dfj i df</p>
-        </div>
-      </div>
-      <div class="accPole3">
-        <div class="aktivacni">
-          <h4>Obezita</h4>
-        </div>
-        <div class="obsahAcc">
-          <p>HHHHHHHHHHhlhjgfjhjioghdiivjd gjijdfgijf f djogididi ggidfig dfj i df</p>
-        </div>
-      </div>
-      <div class="accPole4" id="posledniAcc">
-        <div class="aktivacni">
-          <h4>Obezita</h4>
-        </div>
-        <div class="obsahAcc">
-          <p>HHHHHHHHHHhlhjgfjhjioghdiivjd gjijdfgijf f djogididi ggidfig dfj i df</p>
-        </div>
-      </div>
-    </div>
-    <div class="nazvy">
-        <h3>Kvíz</h3>
-        <p class="popisek">Zahraj si kvíz</p>
-    </div>
-    <div class="kviz">
-        <iframe src="./quiz/quiz.html" frameborder="0"></iframe>
-    </div>
-    <!-- ! ANNA - upravuj pouze nad tímto komentářem-->
-    <script src="animace.js"></script>
-    <script>
-        $(".accPole1 .aktivacni").click(() => {
-          $(".accPole1 .obsahAcc").slideToggle(300);
-        })
-        $(".accPole2 .aktivacni").click(() => {
-          $(".accPole2 .obsahAcc").slideToggle(300);
-        })
-        $(".accPole3 .aktivacni").click(() => {
-          $(".accPole3 .obsahAcc").slideToggle(300);
-        })
-        $(".accPole4 .aktivacni").click(() => {
-          $(".accPole4 .obsahAcc").slideToggle(300);
-        })
-    </script>
+      <!-- Galerie konec-->
+      <script src="scripts/animace.js"></script>
   </main>
   <footer>
-    <div class="menu">
+    <!-- <div class="menu">
       <ul>
         <li class="here">úvod</li>
-        <li><a href="zdroje.html">zdroje</a></li>
-        <li><a href="https://github.com/Webytom-anna/reklama/commits/master">Zdrojový kód</a></li>
-        <li><a href="http://webytom.eu/index.html">další projekty</a></li>
+        <li>zdroje</li>
+        <li>zdrojový kód</li>
+        <li>další projekty</li>
       </ul>
-    </div>
+    </div>-->
     <div class="soc">
-      <a href="https://github.com/webytom-anna" target="_blank"><i class="fab fa-github"></i></a><span>Tomáš Kubíček a Anna Jungmannová</span>
+      <a href="https://github.com/Webytom-anna/Web-ZdravaVyziva-7Tr" target="_blank"><i class="fab fa-github"></i></a>
+      <span>Tomáš Kubíček a Anna Jungmannová</span>
     </div>
   </footer>
+  <!--JS se dává vždy těsně před konec body-->
+  <script src="scripts/lightbox-plus-jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a133fbfca8.js" crossorigin="anonymous"></script>
+  <script src="scripts/animace.js"></script>
+  <script>
+    $("a[href^='#']").click(function (e) {
+      e.preventDefault();
+
+      var position = $($(this).attr("href")).offset().top;
+
+      $("body, html").animate({
+        scrollTop: position
+      } /* speed */ );
+    });
+  </script>
 </body>
+
 </html>
