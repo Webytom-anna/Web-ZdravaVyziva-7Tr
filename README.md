@@ -1,4 +1,4 @@
-# Zdravý web
+# [Zdravý web](https://webytom-anna.github.io/Web-ZdravaVyziva-7Tr/index.html)
 
 Reklamní stránka na zdravou výživu. 
 
@@ -20,10 +20,8 @@ Studentský projekt. Zkouška práce s Gitem, GitHubem a programováním responz
 
 - Grid layout
 
-
-
 <img src="LICENCE.png" title="" alt="LICENCE.png" width="165">
 
+Céčko v kroužku 2020 
 
-
-
+Anna Jungmannová a Tomáš Kubíček
