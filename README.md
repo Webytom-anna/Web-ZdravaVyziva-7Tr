@@ -22,6 +22,8 @@ Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
 
 - Grid layout
 
+- Naprogramovaný quiz (a ukládání do databáze)
+
 <img src="LICENCE.png" title="" alt="LICENCE.png" width="165">
 
 Céčko v kroužku 2020 
