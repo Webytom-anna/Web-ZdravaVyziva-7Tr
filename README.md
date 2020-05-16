@@ -2,7 +2,7 @@
 
 Reklamní stránka na zdravou výživu. 
 
-Studentský projekt žáků sedmé třídy ZŠ. 
+Studentský projekt žáků sedmé třídy ZŠ - skupiny CodeMind 
 
 Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
 
