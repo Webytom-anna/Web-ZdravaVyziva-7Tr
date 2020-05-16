@@ -7,6 +7,8 @@
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Oleo+Script+Swash+Caps:wght@700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/reklama.css">
+  <script src="https://kit.fontawesome.com/a133fbfca8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/lightbox.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reklama</title>
@@ -19,16 +21,18 @@
   <header>
     <div class="hlav1">
       <div class="logo">
-        LOGO
+        <img height="80" width="80" src="images/logo.png" alt="Logo">
       </div>
       <div class="menu">
         <ul>
-          <li class="here"><a href="#jidlo">Jídlo a pití</a></li>
-          <li><a href="#strava">Složení stravy</a></li>
-          <li><a href="#energie">Výživová energie</a></li>
+          <li class="here"><a href="#jidlo">Stravování</a></li>
+          <li><a href="#strava">Složení</a></li>
+          <li><a href="#energie">Energie</a></li>
           <li><a href="#tabulka">Tabulka</a></li>
           <li><a href="#pyramida">Pyramida</a></li>
           <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#poruchy">Poruchy</a></li>
+          <li><a href="#kviz">Kvíz</a></li>
         </ul>
       </div>
 
@@ -51,8 +55,8 @@
             .popisekIkony = popisek ikony
     -->
     <div class="nazvy">
-      <h2 id="jidlo">Jídlo a pití</h2>
-      <h3>Základy stravování</h3>
+      <h2>Jídlo a pití</h2>
+      <h3 id="jidlo">Základy stravování</h3>
     </div>
     <div class="info">
       <div class="infoOblast">
@@ -69,7 +73,7 @@
           <div class="infoRadek" id="iS2">
             <div class="ikonaSeznamu"><i class="fas fa-history"></i></div>
             <span class="nadpisIkony">Časování</span>
-            <span class="popisekIkony">Nejlepší je jíst 4x až 6x denně, ale takové menší porce. Také je ale nutné jídla
+            <span class="popisekIkony">Nejlepší je jíst 4x až 6x denně, ale menší porce. Také je ale nutné jídla
               střídat, a nejíst pořád to stejné.</span>
           </div>
           <div class="infoRadek" id="iS3">
@@ -83,8 +87,7 @@
             <div class="ikonaSeznamu"><i class="fas fa-percent"></i></div>
             <span class="nadpisIkony"">Energetická hodnota stravy</span>
             <span class=" popisekIkony">Příjem stravy má odpovídat energetickému výdeji. Ten se v průběhu života mění,
-              v dětství, kdy organismus roste a sílí, musí být přívod energie vyšší, než je energetický výdej. V
-              pozdějším věku se má přívod energie snižovat. </span>
+              v dětství, kdy organismus roste a sílí, musí být přívod energie vyšší, než je energetický výdej.</span>
           </div>
         </div>
       </div>
@@ -121,7 +124,7 @@
       </div>
       <div class="box3">
         <h4>Bílkoviny</h4>
-        <p class="popis">Bílkoviny jsou základním stavebním kamenem všech tkání v těle. Sloužím nám k růstu a obnově
+        <p class="popis">Bílkoviny jsou základním stavebním kamenem všech tkání v těle. Slouží nám k růstu a obnově
           buněk a tkání, k tvorbě svalů, k produkci hormonů a protilátek.</p>
         <p class="procent" style="color: #F24685;;"><span class="procenta">15%</span><br><span class="veStrave">ve
             stravě</span></p>
@@ -251,7 +254,8 @@
 
       <!-- Galerie-->
       <div class="nazvy">
-        <h3 id="galerie">Galerie</h3>
+        <h3 id="galerie">Nutriční hodnoty</h3>
+        <p class="popisek">Nutriční hodnoty jsou údaje o obsahu energie, tuků, saharidů  bílkovin v potravině. Můžete je najít u většiny potravin na tabulce ze zadu produktu. Tipněte si, kolik energie, sacharidů, tuků a bílkovin je v ovoci a zelenině na obrázkách</p>
       </div>
       <div class="galerie">
         <div class="container">
@@ -350,16 +354,73 @@
       </div>
       <!-- Galerie konec-->
       <script src="scripts/animace.js"></script>
+      <!--
+        Sekci kvíz necháme úplně dole - před patičkou
+        Kvíz obsahuje jen iframe
+      -->
+      <div class="nazvy">
+        <h3 id="poruchy">Poruchy příjmu potravy</h3>
+        <p class="popisek">Poruchy příjmu potravy jsou psychická onemocnění, kam řadíme mentální anorexii, bulimii a další. Často se může stát, že se tyto nemoci střídají, např. přejedení&nbsp;⇒&nbsp;zvracení&nbsp;⇒&nbsp;hladovka&nbsp;⇒&nbsp;přejedení.</p>
+      </div>
+      <div class="ppp">
+        <div class="accPole1" id="prvniAcc">
+          <div class="aktivacni">
+            <h4>Anorexie</h4>
+          </div>
+          <div class="obsahAcc">
+            <p>Anorexie spočívá v naprostém odporu osoby k jídlu. Dělá se mu špatně nebo se neustále cítí nehladový. Situace může vést až k podvýživě a k dalším problémům spjatým s hladověním. Anorektici často ani nepoznají, že potřebují přijmout potravu. Proto je nezbytné je k jídlu nutit a zároveň dohlédnout na plnění jejich pitného režimu. Anorexie může vniknout i tak, že se osoba snaží zhubnout co nejvíce, ale když už je úplně hubená, tak si řekne, že není, a tak pokračuje v hubnutí.</p>
+          </div>
+        </div>
+        <div class="accPole2">
+          <div class="aktivacni">
+            <h4>Bulimie</h4>
+          </div>
+          <div class="obsahAcc">
+            <p>Spočívá v záchvatovitém přejídání a snaze tomuto čelit – úmyslným zvracením, ale také vyvoláváním průjmu, užíváním anorektik či jiných látek k hubnutí se snahou, aby osoba netloustla. Projevuje se zejména u dívek (žen) ve věku 13–18 let. Bulimie může rovněž způsobit vypadání zubů či nehtů a někdy i úplnou slepotu.</p>
+          </div>
+        </div>
+        <div class="accPole3">
+          <div class="aktivacni">
+            <h4>Obezita</h4>
+          </div>
+          <div class="obsahAcc">
+            <p>Je stav, ve kterém přirozená energetická rezerva člověka, která je uložena v tukové tkáni, stoupla nad obvyklou úroveň a poškozuje zdraví. Pro evropskou populaci je podle kritérií Světové zdravotnické organizace (WHO) definována indexem tělesné hmotnosti (BMI) vyšším než 30.</p>
+          </div>
+        </div>
+        <div class="accPole4" id="posledniAcc">
+          <div class="aktivacni">
+            <h4>Podvýživa</h4>
+          </div>
+          <div class="obsahAcc">
+            <p>Podvýživa je stav, který nastává v době, kdy organismus nedostává dostatečný přísun potravy. Projevuje se oslabováním tělesné stavby, větší náchylností k onemocněním a v extrémním případě k úmrtí osoby. Podvýživa je extrémním a dlouhodobým projevem organismu na hlad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="nazvy">
+          <h3 id="kviz">Kvíz</h3>
+          <p class="popisek">Zahraj si kvíz</p>
+      </div>
+      <div class="kviz">
+          <iframe src="./quiz/quiz.html" frameborder="0"></iframe>
+      </div>
+      <!-- ! ANNA - upravuj pouze nad tímto komentářem-->
+      <script src="animace.js"></script>
+      <script>
+          $(".accPole1 .aktivacni").click(() => {
+            $(".accPole1 .obsahAcc").slideToggle(300);
+          })
+          $(".accPole2 .aktivacni").click(() => {
+            $(".accPole2 .obsahAcc").slideToggle(300);
+          })
+          $(".accPole3 .aktivacni").click(() => {
+            $(".accPole3 .obsahAcc").slideToggle(300);
+          })
+          $(".accPole4 .aktivacni").click(() => {
+            $(".accPole4 .obsahAcc").slideToggle(300);
+          })
+      </script>
   </main>
   <footer>
-    <!-- <div class="menu">
-      <ul>
-        <li class="here">úvod</li>
-        <li>zdroje</li>
-        <li>zdrojový kód</li>
-        <li>další projekty</li>
-      </ul>
-    </div>-->
     <div class="soc">
       <a href="https://github.com/Webytom-anna/Web-ZdravaVyziva-7Tr" target="_blank"><i class="fab fa-github"></i></a>
       <span>Tomáš Kubíček a Anna Jungmannová</span>

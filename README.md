@@ -2,7 +2,7 @@
 
 Reklamní stránka na zdravou výživu. 
 
-Studentský projekt žáků sedmé třídy ZŠ - skupiny CodeMind 
+Studentský projekt žáků 7.třídy ZŠ - skupina CodeMind 
 
 Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
 
@@ -29,3 +29,7 @@ Zkouška práce s Gitem, GitHubem a programováním responzivních webů.
 Céčko v kroužku 2020 
 
 Anna Jungmannová a Tomáš Kubíček
+
+
+
+![Preview.jpg](Preview.jpg)
