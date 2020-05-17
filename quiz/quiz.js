@@ -88,15 +88,6 @@ function selectAnswer(e) {
     cas.rozdil = cas.end - cas.start
     cas.rozdil /= 1000; 
     var stav = celkem + '/' + otazky.length + ' správných odpovědí\nZa ' + cas.rozdil + ' sekund\n\n' + text
-    $.ajax({
-      url : 'zapis-quiz.php',
-      type : 'POST',
-      data : {
-        cas: cas.rozdil,
-        jmeno: jmeno,
-        body: celkem + '/' + otazky.length
-      }
-    });
     alert(stav);
   }
 }
